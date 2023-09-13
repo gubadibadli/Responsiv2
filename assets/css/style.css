@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  height: 640px;
+  background-image: url("../image/blue-sky-clouds-abstract-background-illustration-with-copy-space\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+.hamburger {
+  display: none;
+}
+.navbar .logo img {
+  width: 80px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #277AB2;
+  font-weight: 500;
+}
+
+.headerContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 130px;
+  text-align: center;
+}
+.headerContent h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  color: #277AB2;
+  margin-bottom: 20px;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  margin-bottom: 40px;
+  color: #277AB2;
+}
+.box p {
+  font-family: 'Roboto', sans-serif;
+}
+.headerContent .button {
+  width: 150px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  color: #277AB2;
+  padding-top: 10px;
+}
+
+.container2 {
+  max-width: 1280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 140px;
+}
+
+.box {
+ 
+  /* height: 140px; */
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.box i {
+  width: 50px;
+  height: 50px;
+  background-color: #277AB2;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.box h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin: 10px;
+}
+.box p {
+  font-size: 14px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container2 {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .headerContent h3,
+  h1 {
+    font-size: 20px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .container2{
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  
+  .headerContent h3,
+  h1 {
+    font-size: 20px;
+  }
+  .container2 {
+    grid-template-columns: auto;
+    /* width: 100%; */
+    padding: 0 10px;
+  }
+}
